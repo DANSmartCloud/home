@@ -7,6 +7,7 @@
 
 	<meta name="description" content="" />
 	<meta name="keywords" content="bootstrap, bootstrap5" />
+	<meta http-equiv="cleanforms" content="">
 	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,15 +48,15 @@
 					</div>
 					</h3>
 					<form action="https://www.baidu.com/s" class="narrow-w form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200" name="wd">
-						<input type="text" class="form-control px-4" placeholder="输入您想搜索的内容" name="wd"/><input type="submit" class="btn btn-primary" value="百度一下"/>
+						<input type="text" class="form-control px-4" placeholder="输入您想搜索的内容" id="kw" autocomplete="off" name="wd"/><input type="submit" class="btn btn-primary" value="百度一下"/>
 					</form>
 					<form action="https://cn.bing.com/search" class="narrow-w form-search d-flex align-items-stretch mb-3" target="_self" method="get" data-aos="fade-up" data-aos-delay="200" name="wd" >
-						<input type="text" id="search-input" class="form-control px-4" name="q" placeholder="输入您想搜索的内容" autofocus name="wd"/><input type="submit" id="search-button" class="btn btn-primary" value="必应搜索"/>
+						<input type="text" id="search-input" class="form-control px-4" name="q" placeholder="输入您想搜索的内容" autofocus id="kw" autocomplete="off" name="wd"/><input type="submit" id="search-button" class="btn btn-primary" value="必应搜索"/>
 					</form>
 					<div class="align-self-center">
 					<form class="narrow-w form-search d-flex align-items-stretch mb-3 align-self-center row" target="_self" method="get" data-aos="fade-up" data-aos-delay="200" name="wd" >
-						<a href="https://dansmartcloud.github.io/webclass">
-							<input type="button" id="search-input" class="btn btn-outline-danger btn-lg" name="q" value="网课信息平台" autofocus name="wd"/>
+						<a  href="https://dansmartcloud.github.io/webclass">
+							<input type="button" id="search-input" class="btn btn-outline-danger btn-lg" name="q"  value="网课信息平台" autofocus name="wd"/>
 						</a>
 						<!--<a href="hrrps://dansmartcloud.github.io/webclass">
 							<input type="button" id="search-input" class="btn btn-outline-danger" name="q" value="毕业网站" autofocus name="wd"/>
