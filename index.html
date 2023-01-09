@@ -31,6 +31,20 @@
 
 	<title>DAN智云-轻主页-做一个安静的主页</title>
 </head>
+<script type="text/javascript">
+    window.onload = function(){
+             setInterval("toggleSound()",100);
+        }
+
+    function toggleSound() {
+                var music = document.getElementById("music1");//获取ID  
+                    
+                if (music.paused) { //判读是否播放  
+                    music.paused=false;
+                    music.play(); //没有就播放 
+                }    
+        }
+</script>
 <body>
 	<div class="hero-wrap js-fullheight">
 		<div class="container">
@@ -59,7 +73,10 @@
 						<a  href="https://dansmartcloud.github.io/next-DANSC">
 							<input type="button" id="search-input" class="btn btn-outline-danger btn-lg" name="q"  value="DAN智云官网" autofocus name="wd"/>
 						</a>
-						<iframe src="https://music.163.com/outchain/player?type=2&id=32717172&auto=1&height=66"></iframe>
+						<audio id="music1" controls="controls" autoplay="autoplay" preload id="music1" hidden>
+							<source src="qk.mp3" />
+							</audio>
+						<!--<iframe id=music1 src="https://music.163.com/outchain/player?type=2&id=32717172&auto=1&height=66"></iframe>-->
 						<!--<a href="hrrps://dansmartcloud.github.io/webclass">
 							<input type="button" id="search-input" class="btn btn-outline-danger" name="q" value="毕业网站" autofocus name="wd"/>
 						</a>
